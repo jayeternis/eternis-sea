@@ -1,0 +1,144 @@
+/* Eternis Sea — Request Page
+   Brand: obsidian #090A0B · antique gold #C8A45B · archive ivory #F1EBDD · mist #A8A49B */
+
+:root {
+  --obsidian: #090A0B;
+  --gold: #C8A45B;
+  --ivory: #F1EBDD;
+  --mist: #A8A49B;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  color-scheme: dark; /* native date pickers and scrollbars follow the page */
+}
+
+body {
+  background-color: var(--obsidian);
+  color: var(--ivory);
+  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  margin: 0;
+}
+
+.font-display {
+  font-family: "Cormorant Garamond", Georgia, "Times New Roman", serif;
+}
+
+.wordmark {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  letter-spacing: 0.34em;
+}
+
+/* Form controls — kept out of Tailwind so the page still reads correctly
+   if the CDN is slow to load. */
+.field {
+  width: 100%;
+  background-color: transparent;
+  border: 1px solid rgba(200, 164, 91, 0.35);
+  color: var(--ivory);
+  font-family: inherit;
+  font-size: 16px; /* stops iOS zooming on focus */
+  font-weight: 300;
+  padding: 0.65rem 0.75rem;
+  border-radius: 2px;
+}
+
+.field:focus {
+  outline: none;
+  border-color: var(--gold);
+}
+
+.field::placeholder {
+  color: rgba(168, 164, 155, 0.7);
+}
+
+.field-label {
+  display: block;
+  font-size: 0.7rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--mist);
+  margin-bottom: 0.35rem;
+}
+
+select.field {
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+select.field option {
+  background-color: var(--obsidian);
+  color: var(--ivory);
+}
+
+.btn-gold {
+  border: 1px solid var(--gold);
+  color: var(--gold);
+  background-color: transparent;
+  font-size: 0.8rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  padding: 0.7rem 1.1rem;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.btn-gold:hover {
+  background-color: rgba(200, 164, 91, 0.08);
+}
+
+.btn-gold-solid {
+  border: 1px solid var(--gold);
+  background-color: var(--gold);
+  color: var(--obsidian);
+  font-size: 0.8rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  padding: 0.8rem 1.1rem;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.btn-gold-solid[disabled] {
+  opacity: 0.5;
+  cursor: default;
+}
+
+/* Bottom sheet */
+#sheet[hidden] {
+  display: none;
+}
+
+.sheet-panel {
+  transform: translateY(100%);
+  transition: transform 220ms ease-out;
+}
+
+#sheet.is-open .sheet-panel {
+  transform: translateY(0);
+}
+
+@media (min-width: 640px) {
+  .sheet-panel {
+    transform: translateY(1.5rem);
+    opacity: 0;
+    transition: transform 180ms ease-out, opacity 180ms ease-out;
+  }
+
+  #sheet.is-open .sheet-panel {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .sheet-panel {
+    transition: none;
+  }
+}
+
+.error-text {
+  color: var(--gold);
+  font-size: 0.8rem;
+}

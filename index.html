@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Eternis Sea — Private days at sea</title>
+<meta name="description" content="Six private sea days in Mauritius. Quoted and confirmed on WhatsApp by Eternis Tours.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          obsidian: '#090A0B',
+          gold: '#C8A45B',
+          ivory: '#F1EBDD',
+          mist: '#A8A49B'
+        }
+      }
+    }
+  };
+</script>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-obsidian text-ivory">
+
+<header class="border-b border-gold/25">
+  <div class="mx-auto max-w-3xl px-5 py-8">
+    <p class="wordmark text-lg text-gold">ETERNIS</p>
+    <p class="font-display mt-4 text-2xl leading-snug text-ivory sm:text-3xl">
+      Private days at sea. Quoted and confirmed on WhatsApp.
+    </p>
+    <p id="concierge-line" class="mt-3 text-sm text-mist" hidden></p>
+  </div>
+</header>
+
+<main class="mx-auto max-w-3xl px-5 py-10">
+
+  <ul class="space-y-12" id="products">
+
+    <!-- 1 -->
+    <li class="product" data-key="p1">
+      <figure class="m-0">
+        <img src="img/p1.svg" alt="Private motor yacht, full day, south-west" width="1200" height="800" loading="lazy" class="w-full border border-gold/20">
+        <figcaption class="mt-2 text-xs text-mist">Photo: Yacht Mauritius</figcaption>
+      </figure>
+      <div class="mt-5">
+        <p class="status text-xs uppercase tracking-[0.18em] text-mist"></p>
+        <h2 class="font-display mt-2 text-2xl text-ivory">Private motor yacht — full day, south-west</h2>
+        <p class="mt-2 text-sm leading-relaxed text-mist">La Balise Marina to La Preneuse, Crystal Rock and Le Morne, lunch on board, back by four.</p>
+        <p class="mt-3 text-sm text-ivory">From €1,850 for two · €85 per extra guest</p>
+        <p class="mt-1 text-sm text-mist">Up to 8 guests</p>
+        <button type="button" class="btn-gold mt-5 request-btn" data-product="Private motor yacht — full day, south-west">Request this day</button>
+      </div>
+    </li>
+
+    <!-- 2 -->
+    <li class="product" data-key="p2">
+      <figure class="m-0">
+        <img src="img/p2.svg" alt="Private sailing catamaran, full day, Benitier" width="1200" height="800" loading="lazy" class="w-full border border-gold/20">
+        <figcaption class="mt-2 text-xs text-mist">Photo: Yacht Mauritius</figcaption>
+      </figure>
+      <div class="mt-5">
+        <p class="status text-xs uppercase tracking-[0.18em] text-mist"></p>
+        <h2 class="font-display mt-2 text-2xl text-ivory">Private sailing catamaran — full day, Benitier</h2>
+        <p class="mt-2 text-sm leading-relaxed text-mist">A slow day under sail along the south-west coast, snorkelling at La Preneuse, lunch, back by four.</p>
+        <p class="mt-3 text-sm text-ivory">From €895 for two · €85 per extra guest</p>
+        <p class="mt-1 text-sm text-mist">Up to 13 guests</p>
+        <button type="button" class="btn-gold mt-5 request-btn" data-product="Private sailing catamaran — full day, Benitier">Request this day</button>
+      </div>
+    </li>
+
+    <!-- 3 -->
+    <li class="product" data-key="p3">
+      <figure class="m-0">
+        <img src="img/p3.svg" alt="Sunset on a private yacht" width="1200" height="800" loading="lazy" class="w-full border border-gold/20">
+        <figcaption class="mt-2 text-xs text-mist">Photo: Yacht Mauritius</figcaption>
+      </figure>
+      <div class="mt-5">
+        <p class="status text-xs uppercase tracking-[0.18em] text-mist"></p>
+        <h2 class="font-display mt-2 text-2xl text-ivory">Sunset on a private yacht</h2>
+        <p class="mt-2 text-sm leading-relaxed text-mist">Two hours toward Tamarin Bay with drinks and canapés as the light goes.</p>
+        <p class="mt-3 text-sm text-ivory">From €1,230 for two (motor yacht) · €535 for two (catamaran)</p>
+        <p class="mt-1 text-sm text-mist">Up to 8 / 13 guests</p>
+        <button type="button" class="btn-gold mt-5 request-btn" data-product="Sunset on a private yacht">Request this day</button>
+      </div>
+    </li>
+
+    <!-- 4 -->
+    <li class="product" data-key="p4">
+      <figure class="m-0">
+        <img src="img/p4.svg" alt="Big-game fishing, half or full day" width="1200" height="800" loading="lazy" class="w-full border border-gold/20">
+        <figcaption class="mt-2 text-xs text-mist">Photo: Blue Safari</figcaption>
+      </figure>
+      <div class="mt-5">
+        <p class="status text-xs uppercase tracking-[0.18em] text-mist"></p>
+        <h2 class="font-display mt-2 text-2xl text-ivory">Big-game fishing — half or full day</h2>
+        <p class="mt-2 text-sm leading-relaxed text-mist">Marlin, tuna and wahoo with a professional crew from the north. Six or nine hours.</p>
+        <p class="mt-3 text-sm text-ivory">From Rs 47,000 half day · Rs 53,000 full day (50 ft)</p>
+        <p class="mt-1 text-sm text-mist">Up to the boat's licensed capacity</p>
+        <button type="button" class="btn-gold mt-5 request-btn" data-product="Big-game fishing — half or full day">Request this day</button>
+      </div>
+    </li>
+
+    <!-- 5 -->
+    <li class="product" data-key="p5">
+      <figure class="m-0">
+        <img src="img/p5.svg" alt="Private speedboat day, northern islands" width="1200" height="800" loading="lazy" class="w-full border border-gold/20">
+        <figcaption class="mt-2 text-xs text-mist">Photo: Blue Safari</figcaption>
+      </figure>
+      <div class="mt-5">
+        <p class="status text-xs uppercase tracking-[0.18em] text-mist"></p>
+        <h2 class="font-display mt-2 text-2xl text-ivory">Private speedboat day — northern islands</h2>
+        <p class="mt-2 text-sm leading-relaxed text-mist">Îlot Gabriel and Coin de Mire by private boat, swimming and snorkelling, your own pace.</p>
+        <p class="mt-3 text-sm text-ivory">From Rs 25,000 per boat, up to 12</p>
+        <p class="mt-1 text-sm text-mist">Up to 12 guests</p>
+        <button type="button" class="btn-gold mt-5 request-btn" data-product="Private speedboat day — northern islands">Request this day</button>
+      </div>
+    </li>
+
+    <!-- 6 -->
+    <li class="product" data-key="p6">
+      <figure class="m-0">
+        <img src="img/p6.svg" alt="A night at anchor on a private catamaran" width="1200" height="800" loading="lazy" class="w-full border border-gold/20">
+        <figcaption class="mt-2 text-xs text-mist">Photo: Yacht Mauritius</figcaption>
+      </figure>
+      <div class="mt-5">
+        <p class="status text-xs uppercase tracking-[0.18em] text-mist"></p>
+        <h2 class="font-display mt-2 text-2xl text-ivory">A night at anchor — private catamaran</h2>
+        <p class="mt-2 text-sm leading-relaxed text-mist">Sail to Benitier or the northern islands, sleep on board, dolphins and breakfast at dawn.</p>
+        <p class="mt-3 text-sm text-ivory">From €1,550 for two (Benitier) · €1,735 (north)</p>
+        <p class="mt-1 text-sm text-mist">Up to 6 guests overnight</p>
+        <button type="button" class="btn-gold mt-5 request-btn" data-product="A night at anchor — private catamaran">Request this day</button>
+      </div>
+    </li>
+
+  </ul>
+</main>
+
+<footer class="border-t border-gold/25">
+  <div class="mx-auto max-w-3xl px-5 py-8 space-y-3">
+    <p class="text-sm leading-relaxed text-mist">
+      Eternis Tours arranges these charters with licensed operators; the operator's own conditions of carriage apply.
+      <a href="terms.html" class="text-gold underline underline-offset-4">Terms</a>
+    </p>
+    <p class="text-xs leading-relaxed text-mist">
+      Eternis Group of Companies Ltd · trading as Eternis Tours · Tourism Authority online tour operator licence TEL/3729/T/TO · BRN C25222605
+    </p>
+  </div>
+</footer>
+
+<!-- Request sheet -->
+<div id="sheet" hidden class="fixed inset-0 z-50 flex items-end justify-center sm:items-center">
+  <div id="sheet-backdrop" class="absolute inset-0 bg-black/70"></div>
+
+  <div class="sheet-panel relative w-full max-w-lg max-h-[92vh] overflow-y-auto border-t border-gold/40 bg-obsidian px-5 pb-8 pt-5 sm:border sm:rounded-sm"
+       role="dialog" aria-modal="true" aria-labelledby="sheet-title">
+
+    <div class="flex items-start justify-between gap-4">
+      <h2 id="sheet-title" class="font-display text-xl text-ivory">Request this day</h2>
+      <button type="button" id="sheet-close" class="text-mist text-sm" aria-label="Close">Close</button>
+    </div>
+
+    <!-- Form state -->
+    <form id="request-form" class="mt-5 space-y-4" novalidate>
+      <div>
+        <label class="field-label" for="f-product">Product</label>
+        <input class="field" id="f-product" name="product" type="text" readonly>
+      </div>
+
+      <div class="grid grid-cols-2 gap-3">
+        <div>
+          <label class="field-label" for="f-date">Date</label>
+          <input class="field" id="f-date" name="date" type="date" required>
+        </div>
+        <div>
+          <label class="field-label" for="f-alt-date">Alternate date</label>
+          <input class="field" id="f-alt-date" name="alt_date" type="date">
+        </div>
+      </div>
+
+      <div class="grid grid-cols-2 gap-3">
+        <div>
+          <label class="field-label" for="f-adults">Adults</label>
+          <input class="field" id="f-adults" name="adults" type="number" min="1" step="1" value="2" required>
+        </div>
+        <div>
+          <label class="field-label" for="f-children">Children</label>
+          <input class="field" id="f-children" name="children" type="number" min="0" step="1" value="0">
+        </div>
+      </div>
+
+      <div>
+        <label class="field-label" for="f-pickup">Pickup point — hotel or villa name and area</label>
+        <input class="field" id="f-pickup" name="pickup" type="text" autocomplete="off" placeholder="Villa name, Tamarin">
+      </div>
+
+      <div>
+        <label class="field-label" for="f-name">Name</label>
+        <input class="field" id="f-name" name="name" type="text" autocomplete="name" required>
+      </div>
+
+      <div>
+        <label class="field-label" for="f-whatsapp">WhatsApp number with country code</label>
+        <input class="field" id="f-whatsapp" name="whatsapp" type="tel" inputmode="tel" autocomplete="tel" placeholder="+230 5944 1336" required>
+      </div>
+
+      <div>
+        <label class="field-label" for="f-notes">Notes — dietary, occasion</label>
+        <textarea class="field" id="f-notes" name="notes" rows="3"></textarea>
+      </div>
+
+      <p id="form-error" class="error-text" hidden></p>
+
+      <button type="submit" id="submit-btn" class="btn-gold-solid w-full">Send request</button>
+    </form>
+
+    <!-- Success state -->
+    <div id="success-state" class="mt-5 space-y-5" hidden>
+      <p class="text-sm leading-relaxed text-ivory">
+        Received. Darshan will confirm price and availability on WhatsApp within a few hours during the day.
+      </p>
+      <p class="text-sm text-mist">Reference <span id="req-id" class="text-gold"></span></p>
+      <a id="whatsapp-link" class="btn-gold-solid block text-center no-underline" href="#" target="_blank" rel="noopener">Continue on WhatsApp</a>
+    </div>
+
+  </div>
+</div>
+
+<script src="config.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
