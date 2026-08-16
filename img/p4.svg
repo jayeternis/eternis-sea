@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800" role="img" aria-label="Placeholder image for Big-game fishing">
+  <rect width="1200" height="800" fill="#090A0B"/>
+  <rect x="40" y="40" width="1120" height="720" fill="none" stroke="#C8A45B" stroke-width="1" opacity="0.45"/>
+  <line x1="100" y1="330" x2="260" y2="330" stroke="#C8A45B" stroke-width="1"/>
+  <text x="100" y="300" font-family="Inter, Helvetica, Arial, sans-serif" font-size="26" letter-spacing="8" fill="#A8A49B">PLACEHOLDER</text>
+  <text x="100" y="415" font-family="Cormorant Garamond, Georgia, serif" font-size="66" fill="#F1EBDD">Big-game fishing</text>
+  <text x="100" y="470" font-family="Inter, Helvetica, Arial, sans-serif" font-size="28" font-weight="300" fill="#A8A49B">Paille-en-Queue · half or full day</text>
+  <text x="100" y="690" font-family="Inter, Helvetica, Arial, sans-serif" font-size="24" font-weight="300" fill="#A8A49B">Replace with the Blue Safari image. Photo: Blue Safari</text>
+</svg>
